@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <title>Expense tracker</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Expense Tracker</h1>
+    <div>
+      <label for="expenseAmount">Choose Expense Amount:</label>
+      <input type="number" max="1000" min="1" id="expenseAmount" />
+
+      <label for="description">Choose Description:</label>
+      <input type="text" id="description" />
+
+      <label for="category">Choose Category:</label>
+      <select id="category">
+        <option>Food</option>
+        <option>Fuel</option>
+        <option>Electricity</option>
+        <option>Recharge</option>
+      </select>
+
+      <button id="addExpense">Add Expense</button>
+      <ul id="expenseList"></ul>
+    </div>
+    <script src="./expense.js"></script>
+  </body>
+</html>
